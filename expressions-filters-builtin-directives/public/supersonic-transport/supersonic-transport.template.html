@@ -1,0 +1,16 @@
+<table>
+    <thead>
+    <tr>
+        <th>Test Flight Year</th>
+        <th>Name</th>
+        <th>Speed MPH</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-class="{'highlight': aircraft.testFlightYear < 2017}" ng-repeat="aircraft in $ctrl.aircraft  | orderBy:'testFlightYear'">
+        <td>{{ aircraft.testFlightYear }}</td>
+        <td><a href="{{ aircraft.url }}">{{ aircraft.name }}</a></td>
+        <td>{{ aircraft.speedMPH }}</td>
+    </tr>
+    </tbody>
+</table>
