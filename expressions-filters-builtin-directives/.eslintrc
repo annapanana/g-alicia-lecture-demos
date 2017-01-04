@@ -17,7 +17,7 @@
     "no-empty-character-class": 2,
     "no-empty": 2,
     "no-ex-assign": 2,
-    "no-extra-boolean-cast": 0, /* this is ok, it can be used to coerce to a boolean */
+    "no-extra-boolean-cast": 0,
     "no-extra-parens": [2, "functions"],
     "no-extra-semi": 2,
     "no-func-assign": 2,
@@ -38,11 +38,11 @@
     "accessor-pairs": 0,
     "block-scoped-var": 0,
     "complexity": 0,
-    "consistent-return": 1, /* TODO: breaking some tests as of ESLINT 2 */
+    "consistent-return": 1,
     "curly": 2,
     "default-case": 2,
     "dot-notation": 2,
-    "dot-location": 0, /* always keep this off */
+    "dot-location": 0,
     "eqeqeq": 2,
     "guard-for-in": 2,
     "no-alert": 2,
@@ -57,7 +57,7 @@
     "no-floating-decimal": 0,
     "no-implicit-coercion": 0,
     "no-implied-eval": 2,
-    "no-invalid-this": 0, /* revisit one day */
+    "no-invalid-this": 0,
     "no-iterator": 2,
     "no-labels": 2, /* this is basically a goto statement */
     "no-lone-blocks": 2,
@@ -82,10 +82,10 @@
     "no-unused-expressions": 2,
     "no-useless-call": 2,
     "no-void": 2,
-    "no-warning-comments": 0, /* always keep this off */
+    "no-warning-comments": 0,
     "no-with": 2,
     "radix": 2,
-    "vars-on-top": 0, /* always keep this off */
+    "vars-on-top": 0,
     "wrap-iife": 0,
     "yoda": 2,
 
@@ -104,11 +104,10 @@
     "no-undef": 2,
     "no-undefined": 0,
     "no-unused-vars": 0,
-    /*"no-use-before-define": 2,*/
 
     /* Node.js */
     "callback-return": [2, ["callback", "cb", "next"]],
-    "global-require": 0, /* requirejs requires this to be 0 */
+    "global-require": 0,
     "handle-callback-err": 2,
     "no-mixed-requires": 2,
     "no-new-require": 2,
@@ -118,8 +117,8 @@
     "no-sync": 0,
 
     /* Stylistic Issues */
-    "array-bracket-spacing": [1, "never"], /* TURN TO ERROR SOON */
-    "block-spacing": [1, "always"], /* TURN TO ERROR SOON */
+    "array-bracket-spacing": [1, "never"],
+    "block-spacing": [1, "always"],
     "brace-style": [2, "stroustrup"],
     "camelcase": 0,
     "comma-spacing": [2, {"before": false, "after": true}],
@@ -132,7 +131,7 @@
     "id-length": 0,
     "id-match": 0,
     "indent": [2, 2],
-    //"jsx-quotes": [2, "prefer-single"],
+    /* "jsx-quotes": [2, "prefer-single"], */
     "key-spacing": [2, {"beforeColon": false, "afterColon": true}],
     "lines-around-comment": 0,
     "linebreak-style": 0,
@@ -149,17 +148,15 @@
     "no-nested-ternary": 2,
     "no-new-object": 2,
     "no-spaced-func": 2,
-    "no-ternary": 0, /* always keep this off */
+    "no-ternary": 0,
     "no-trailing-spaces": 2,
     "no-underscore-dangle": 0,
     "no-unneeded-ternary": 2,
     "object-curly-spacing": 0,
     "one-var": [2, "never"],
     "operator-assignment": 0,
-    "operator-linebreak": 0, /* should revist this */
     "padded-blocks": [2, "never"],
     "quote-props": 0, // [2, "as-needed"],
-//    "quotes": [2, "double"],
     "quotes": ["error", "double", { "allowTemplateLiterals": true }],
     "require-jsdoc": 0,
     "semi-spacing": [2, {"before": false, "after": true}],
@@ -180,15 +177,12 @@
     "generator-star-spacing": 0,
     "no-class-assign": 2,
     "no-const-assign": 2,
-    "no-dupe-class-members": 1, /* TURN TO ERROR SOON */
+    "no-dupe-class-members": 1,
     "no-this-before-super": 2,
 //    "no-var": 2, // Hardcore ES6 stuff
     "object-shorthand": 0,
-    "prefer-arrow-callback": 0, /* revisit one day */
+    "prefer-arrow-callback": 0,
     "prefer-const": 0,
-    "prefer-spread": 0, /* revisit one day */
-    "prefer-reflect": 0, /* revisit one day */
-    "prefer-template": 0, /* revisit one day */
     "require-yield": 2,
 
     /* Legacy */
@@ -207,9 +201,8 @@
   "env": {
     "browser": true,
     "node": true,
-    "worker": false,
     "mocha": true,
-    "jasmine": false,
+    "jasmine": true,
     "jquery": true,
     "es6": true
   },
