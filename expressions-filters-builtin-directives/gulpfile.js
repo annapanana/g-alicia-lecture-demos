@@ -19,4 +19,5 @@ gulp.task("lint", () => {
 
 gulp.task("default", ["lint"]);
 
-gulp.watch(jsFiles, ["default"]);
+// Uncomment the line below to CONTINUOUSLY lint JS sources
+// gulp.watch(jsFiles, ["default"]);
