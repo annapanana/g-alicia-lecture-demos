@@ -1,5 +1,5 @@
 {
-  "name": "dir-nav-cli",
+  "name": "expressions-filters-builtin-directives",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,7 +12,6 @@
     "babel-polyfill": "^6.16.0",
     "babel-preset-latest": "^6.16.0",
     "body-parser": "^1.15.2",
-    "chalk": "^1.1.3",
     "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
