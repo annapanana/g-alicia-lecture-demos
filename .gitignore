@@ -41,3 +41,6 @@ jspm_packages
 
 # OS X Junk
 .DS_Store
+
+# Vim swap files
+*.swp
