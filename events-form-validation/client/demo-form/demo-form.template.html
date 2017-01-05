@@ -1,11 +1,11 @@
 <form novalidate name="$ctrl.usernameForm" ng-submit="$ctrl.submitUsername($ctrl.user.username, $ctrl.user.password)">
     <div>
-        <label for="username">Username</label>
+        <label for="username" ng-class="{'has-error': $ctrl.usernameForm.username.$invalid && $ctrl.usernameForm.username.$touched}">Username</label>
         <input id="username" name="username" type="text" ng-model="$ctrl.user.username" required ng-minlength="3" ng-maxlength="11">
     </div>
 
     <div>
-        <label for="password">Password</label>
+        <label for="password" ng-class="{'has-error': $ctrl.usernameForm.password.$invalid && $ctrl.usernameForm.password.$touched}">Password</label>
         <input id="password" name="password" type="password" ng-model="$ctrl.user.password" required ng-minlength="3" ng-maxlength="11">
     </div>
 
