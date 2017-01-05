@@ -1,4 +1,4 @@
-<form novalidate name="$ctrl.usernameForm" ng-submit="$ctrl.submitUsername($ctrl.user.username)">
+<form novalidate name="$ctrl.usernameForm" ng-submit="$ctrl.submitUsername($ctrl.user.username, $ctrl.user.password)">
     <div>
         <label for="username">Username</label>
         <input id="username" name="username" type="text" ng-model="$ctrl.user.username">
@@ -10,5 +10,5 @@
     </div>
 
     <button type="submit">Submit</button>
-    <button>Reset</button>
+    <button ng-click="$ctrl.resetUsernameForm()">Reset</button>
 </form>
