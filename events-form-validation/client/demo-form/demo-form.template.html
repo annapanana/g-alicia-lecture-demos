@@ -1,14 +1,14 @@
 <form novalidate name="$ctrl.usernameForm" ng-submit="$ctrl.submitUsername($ctrl.user.username, $ctrl.user.password)">
     <div>
         <label for="username">Username</label>
-        <input id="username" name="username" type="text" ng-model="$ctrl.user.username">
+        <input id="username" name="username" type="text" ng-model="$ctrl.user.username" required ng-minlength="3" ng-maxlength="11">
     </div>
 
     <div>
         <label for="password">Password</label>
-        <input id="password" name="password" type="password" ng-model="$ctrl.user.password">
+        <input id="password" name="password" type="password" ng-model="$ctrl.user.password" required ng-minlength="3" ng-maxlength="11">
     </div>
 
-    <button type="submit">Submit</button>
+    <button type="submit" ng-disabled="$ctrl.usernameForm.$invalid">Submit</button>
     <button ng-click="$ctrl.resetUsernameForm()">Reset</button>
 </form>
