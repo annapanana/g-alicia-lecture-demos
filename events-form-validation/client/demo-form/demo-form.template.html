@@ -11,4 +11,13 @@
 
     <button type="submit" ng-disabled="$ctrl.usernameForm.$invalid">Submit</button>
     <button ng-click="$ctrl.resetUsernameForm()">Reset</button>
+
+    <div>
+        <p ng-if="$ctrl.usernameForm.username.$invalid && $ctrl.usernameForm.username.$touched">
+            Username must be greater than 2 and less than 12 characters in length (between 3 and 11)
+        </p>
+        <p ng-if="$ctrl.usernameForm.password.$invalid && $ctrl.usernameForm.password.$touched">
+            Your security is important. Please make a password between 3 and 11 characters long.
+        </p>
+    </div>
 </form>
