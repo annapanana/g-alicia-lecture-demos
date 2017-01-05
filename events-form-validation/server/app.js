@@ -1,13 +1,8 @@
-const express = require("express");
-
-const app = express();
+var express = require("express");
+var app = express();
 
 app.use(express.static("client"));
 
-app.get("/supersonic-transport", (req, res) => {
-  res.send("Hello world");
-});
-
-app.listen(3000, () => {
+app.listen(3000, function () {
   console.log("Listening on port 3000. Working directory is", process.cwd());
 });
