@@ -44,3 +44,7 @@ jspm_packages
 
 # Vim swap files
 *.swp
+
+# Yarn fuzz
+yarn.lock
+
