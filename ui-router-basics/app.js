@@ -1,4 +1,4 @@
 (function () {
   angular
-    .module("app", []);
+    .module("app", ["about.component", "home.component"]);
 })();
