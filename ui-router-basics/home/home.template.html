@@ -1,1 +1,6 @@
-<h4>Right at home</h4>
+<h4>I will call you</h4>
+<form ng-submit="$ctrl.submitPhoneNumber($ctrl.phoneNumber)">
+    <label for="phoneNumber">Phone Number</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" ng-model="$ctrl.phoneNumber">
+    <button type="submit">sumbit</button>
+</form>

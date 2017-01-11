@@ -1,6 +1,6 @@
 (function () {
   angular
-    .module("app", ["ui.router", "home.component", "about.component"])
+    .module("app", ["ui.router", "home.component", "about.component", "callMe.component"])
     .config(config);
 
   config.$inject = ["$stateProvider", "$urlRouterProvider", "$locationProvider"];
@@ -18,6 +18,14 @@
         name: "about",
         url: "/about",
         component: "about"
+      })
+      .state({
+        name: "callMe",
+        url: "/call-me/:phoneNumber",
+        component: "callMe",
+        params: {
+          phoneNumber: "198-765-4320"
+        }
       });
   }
 })();
