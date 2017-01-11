@@ -3,14 +3,22 @@
 
 <head>
     <meta charset="utf-8">
+    <base href="/">
     <title>Routes are Fun</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
 </head>
 
-<body ng-app="app">
+<body>
 <div class="container" ng-app="app">
 
-    <p>Hello World</p>
+    <div class="row">
+        <div class="u-full-width">
+            <a ui-sref="home" class="button" ui-sref-active="button-primary">home</a>
+            <a ui-sref="about" class="button" ui-sref-active="button-primary">about</a>
+        </div>
+    </div>
+
+    <ui-view></ui-view>
 
 </div>
 
